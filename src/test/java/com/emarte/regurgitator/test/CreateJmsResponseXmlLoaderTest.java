@@ -13,7 +13,7 @@ public class CreateJmsResponseXmlLoaderTest extends XmlLoaderTest {
 
 	@Test
 	public void testThis() throws Exception {
-		assertExpectation("classpath:/CreateJmsResponse.xml", "com.emarte.regurgitator.extensions.mq.CreateJmsResponse:[com.emarte.regurgitator.core.CreateResponse:['create-jms-response-1',com.emarte.regurgitator.core.ValueSource:[null,'value'],null],'destination','correlation-id','type']");
+		assertExpectation("classpath:/CreateJmsResponse.xml", "com.emarte.regurgitator.extensions.mq.CreateJmsResponse:[com.emarte.regurgitator.core.CreateResponse:['create-jms-response-1',com.emarte.regurgitator.core.ValueSource:[null,'value'],null],'message-id','type','destination','correlation-id','4','expiration','priority','true','reply-to','123456789']");
 	}
 
 	@Test
