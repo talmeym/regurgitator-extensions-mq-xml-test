@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rg:regurgitator-configuration xmlns:rg="http://core.regurgitator.emarte.com"
+                               xmlns:rgm="http://mq.extensions.regurgitator.emarte.com"
+                               xmlns:rgcct="http://stuff.test.regurgitator.emarte.com"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                               xsi:schemaLocation="http://core.regurgitator.emarte.com regurgitatorCore.xsd http://mq.extensions.regurgitator.emarte.com regurgitatorExtensionsMq.xsd http://stuff.test.regurgitator.emarte.com test.xsd">
+    <rgm:create-jms-response id="create-jms-response-1" value="value" jms-message-id="message-id" jms-type="type" jms-destination="destination" jms-correlation-id="correlation-id" jms-delivery-mode="1" jms-expiration="2" jms-priority="3" jms-redelivered="true" jms-reply-to="reply-to" jms-timestamp="123456789">
+        <rgcct:test-value-processor/>
+        <rgcct:test-value-processor/>
+    </rgm:create-jms-response>
+</rg:regurgitator-configuration>

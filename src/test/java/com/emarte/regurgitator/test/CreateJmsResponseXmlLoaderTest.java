@@ -8,6 +8,7 @@ import com.emarte.regurgitator.extensions.mq.CreateJmsResponseXmlLoader;
 import org.junit.Test;
 
 import static com.emarte.regurgitator.core.ConfigurationFile.loadFile;
+import static com.emarte.regurgitator.test.MqExtensionsLoaderTestExpectations.*;
 import static com.emarte.regurgitator.test.MqExtensionsLoaderTestExpectations.CreateJmsResponse;
 
 public class CreateJmsResponseXmlLoaderTest extends XmlLoaderTest {
@@ -18,6 +19,16 @@ public class CreateJmsResponseXmlLoaderTest extends XmlLoaderTest {
     @Test
     public void testThis() throws Exception {
         assertExpectation("classpath:/CreateJmsResponse.xml", CreateJmsResponse);
+    }
+
+    @Test
+    public void testProcessor() throws Exception {
+        assertExpectation("classpath:/CreateJmsResponse_processor.xml", CreateJmsResponse_processor);
+    }
+
+    @Test
+    public void testMultipleProcessor() throws Exception {
+        assertExpectation("classpath:/CreateJmsResponse_multipleProcessor.xml", CreateJmsResponse_multipleProcessor);
     }
 
     @Test
