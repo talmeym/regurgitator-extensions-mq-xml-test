@@ -28,7 +28,12 @@ public class CreateJmsResponseXmlLoaderTest extends XmlLoaderTest {
 
     @Test
     public void testMultipleProcessor() throws Exception {
-        assertExpectation("classpath:/CreateJmsResponse_multipleProcessor.xml", CreateJmsResponse_multipleProcessor);
+        assertExpectation("classpath:/CreateJmsResponse_multipleProcessors.xml", CreateJmsResponse_multipleProcessors);
+    }
+
+    @Test
+    public void testMultipleProcessorFlat() throws Exception {
+        assertExpectation("classpath:/CreateJmsResponse_multipleProcessorsFlat.xml", CreateJmsResponse_multipleProcessorsFlat);
     }
 
     @Test
