@@ -9,7 +9,6 @@ import org.junit.Test;
 
 import static com.emarte.regurgitator.core.ConfigurationFile.loadFile;
 import static com.emarte.regurgitator.test.MqExtensionsLoaderTestExpectations.*;
-import static com.emarte.regurgitator.test.MqExtensionsLoaderTestExpectations.CreateJmsResponse;
 
 public class CreateJmsResponseXmlLoaderTest extends XmlLoaderTest {
     public CreateJmsResponseXmlLoaderTest() {
